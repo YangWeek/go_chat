@@ -1,0 +1,22 @@
+Name: im.ws
+ListenOn: 0.0.0.0:10090
+
+JwtAuth:
+  AccessSecret: github/yang
+
+Mongo:
+  Url: "mongodb://root:easy-chat@127.0.0.1:7017"
+  Db: easy-chat
+
+
+# 这个表示传输聊天消息
+MsgChatTransfer:
+  Topic: msgChatTransfer
+  Addrs:
+    - 127.0.0.1:9092
+
+# 这个表示传输聊天消息
+MsgReadTransfer:
+  Topic: msgReadTransfer
+  Addrs:
+    - 127.0.0.1:9092

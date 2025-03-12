@@ -1,0 +1,20 @@
+Name: user
+Host: 0.0.0.0
+Port: 8888
+
+
+Redisx:
+  Host: 127.0.0.1:6379
+  Type: node
+  Pass: easy-chat
+
+UserRpc:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: user.rpc
+
+
+JwtAuth:
+  AccessSecret: github/yang
+  AccessExpire: 8640000
